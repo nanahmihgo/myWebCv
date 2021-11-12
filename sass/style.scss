@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@font-face {
+	font-family: "pricedown bl";
+	src: url("../font/pricedown/pricedown\ bl.otf");
+}
+
+
+* {
+    font-family: "pricedown bl", "architects daughter", "indie flower", "caveat", "shrikhand", Arial, sans-serif;
+	color: White;
+	-webkit-text-stroke: 2px black;
+}
+
+.son {
+	width: 40vw;
+	height: 2vh;
+}
+
+figure {
+	margin: 0 0 0 2rem;
+}
+
+body {
+	background: center fixed no-repeat url("../img/gtaBig.jpg");
+	margin: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100vw;
+	height: 30vh;
+	margin-top: 2vh;
+}
+
+nav {
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 2rem 0 0;
+}
+
+.photo {
+	width: 8rem;
+	height: 8rem;
+	margin: 1rem 0 0 2rem;
+    .img{
+        width: 8rem;
+	    height: 8rem;
+        cursor: url(cible_halo.png) 16 16, auto;
+    }
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 0 0 0 2rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+	margin: 0 0 0 2rem;
+}
+
+section {
+    width: 100vw;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin: auto;
+        ol {
+            padding: 0;
+            margin: 5vh 0 0 0;
+                a {
+                    text-decoration: none;
+                    padding: 0;
+                    li {
+                        list-style-type: none;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50vw;
+                        height: 6vh;
+                        font-size: 1.3em;
+                        border: 2px solid white;
+                        cursor: url(cible_halo.png) 16 16, auto;
+                        transition: transform 300ms ease-in-out;
+                        &:hover {
+                            transform: scale(1.1);
+                            background-color: black;
+                        }   
+                    } 
+              }
+        }    
+}
+
+
+footer {
+	width: 100vw;
+	height: 10vh;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        align-items: center;
+        margin: 0;
+        width: 80vw;
+        li {
+            transition: transform 200ms ease-in-out;
+            i {
+            font-size: 2rem;
+            }
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+i {
+	font-size: 2rem;
+}
+
+.fa-whatsapp:hover {
+	color: green;
+}
+
+.fa-github:hover {
+	color: pink;
+}
+
+.fa-linkedin:hover {
+	color: #0e76a8;
+}
+
+.fa-discord:hover {
+	color: #7289da;
+}
+
+.fa-twitch:hover {
+	color: #9147fe;
+}
+
+
+
+//     .btn {
+//         height: 100%;
+//         border-radius: 0 15px 15px 0;
+//         background-color: rgb(153, 226, 208);
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         transition: transform 300ms ease-in-out;
+//         transform: scaleX(0);
+//         transform-origin: right;
+//             button { 
+//                 height: 1.4em;
+//                 width: 1.4em;
+//                 border: none;
+//                 border-radius: 20px;
+//                 background-color: white;
+//                 color: rgb(153, 226, 208);
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 transform: rotate(0);
+//                 transition: transform 300ms ease-in-out;
+//             }
+//     }
+//     &:hover {
+//         .prix {
+//             transform: translate(-100%, 0);
+//         }
+//         .section__btnbox {
+//             width: 17%;
+//             transform: scaleX(1);
+//             cursor: pointer;
+//                 button { 
+//                     transform: rotate(360deg);
+//                     cursor: pointer;
+//                 }
+//         }
+//     }
+// }

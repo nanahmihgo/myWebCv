@@ -1,0 +1,11 @@
+{
+  "name": "projetjs",
+  "version": "1.0.0",
+  "description": "cv online",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+  },
+  "author": "Vince Fischer",
+  "license": "ISC"
+}
