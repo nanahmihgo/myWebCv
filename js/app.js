@@ -1,20 +1,74 @@
 // SON GUN !
-bouton.onclick=function(){
-    son1.play()
-    }
+// bouton.onclick=function(){
+//     son1.play()
+//     }
 
 
-let options = document.querySelectorAll('option')
+// let options = document.querySelectorAll('option')
 
- options[0].addEventListener('click', () => {
-   window.location.href='./html/inscr.html'
- })
- options[1].addEventListener('click', () => {
-   window.location.href='./html/inscr.html'
- })
- options[2].addEventListener('click', () => {
-   window.location.href='./html/inscr.html'
- })
+//  options[0].addEventListener('click', () => {
+//    window.location.href='./html/inscr.html'
+//  })
+//  options[1].addEventListener('click', () => {
+//    window.location.href='./html/inscr.html'
+//  })
+//  options[2].addEventListener('click', () => {
+//    window.location.href='./html/inscr.html'
+//  })
+
+
+
+// document.getElementsByClassName('menu').style.display = 'none';
+// document.getElementsByClassName('block').style.display = 'block';
+
+let menu = document.querySelectorAll('.menu')
+let block = document.getElementsByClassName('block')
+let burger = document.querySelector('i')
+
+
+  burger.addEventListener('click', () => {
+      console.log(menu[0].classList.length);
+      if(menu[0].classList.length == 2) {
+      menu[0].classList.remove('test')
+      block[0].classList.remove ('test2')
+      } 
+      else if (menu[0].classList.length == 1) {
+      menu[0].classList.add('test')
+      block[0].classList.add('test2')
+      }
+    })
+
+
+
+
+// //debut du code
+// document.querySelector('.menu').style.display = 'none';
+// document.querySelector('#amp-on').style.display = 'block';
+
+// var bouttonClick = document.getElementById('btn');
+
+// // ce qui se apsse si je clique sur le bouton
+// bouttonClick.addEventListener('click', () => {
+//     //comportement si tu cliques
+
+//     //on récupere les element du DOM
+//     var ampouleOn = document.getElementById('amp-on');
+//     var ampouleOff = document.querySelector('#amp-off');
+
+//     //ampouleOn.style.display => on recupère la propriété css de l'element HTML
+//     if (ampouleOn.style.display == 'block') {
+//         // si l'ampoule allumée est a l'écran
+//         ampouleOn.style.display = 'none';
+//         ampouleOff.style.display = 'block';
+
+//     } else if (ampouleOff.style.display == 'block') {
+//         //si l'ampoule eteinte est a l'ecran 
+//         ampouleOff.style.display = 'none';
+//         ampouleOn.style.display = 'block';
+//     }
+// });
+
+
 
 // console.log(options)
 // options.addEventListener('click', () => {

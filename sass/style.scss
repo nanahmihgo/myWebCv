@@ -20,10 +20,38 @@ html{
 }
 
 body {
-	background: center fixed no-repeat url("../img/gtaBig.jpg");
+	background: center fixed no-repeat url("../img/gta2.jpg");
 	margin: auto;
     width: 100vw;
     height: 100vh;
+    display: flex;
+}
+
+.menu {
+    width: 40vw;
+    height: 100vh;
+    transition: transform 300ms ease-in-out;
+    transform: translateX(-40vw);
+    transform-origin: left;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(60deg,rgb(249, 214, 86), rgb(255, 126, 46));
+    border: 2px rgb(213, 82, 76) solid;
+    box-sizing: border-box;
+}
+
+.test {
+    transform: translateX(0)
+}
+
+.block {
+    position: relative;
+    z-index: 0;
+    transition: transform 300ms ease-in-out, filter 400ms;
+}
+
+.test2 {
+    filter: blur(3px);
 }
 
 header {
@@ -31,32 +59,38 @@ header {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-end;
 	width: 100vw;
 	height: 40vh;
 	margin-top: 2vh;
-    nav {
-        width: 32px;
-        height: 32px;
-        margin: 20px 20px 0 0;
-        .fa-bars {
-            position: absolute;
-        }
-        select {
-            width: 32px;
-            height: 32px;
-            font-size: 1.2em;
-            padding: 0;
-            position: relative;
-            opacity: 0;
-            cursor: pointer;
-            background-color: black;
-            option {
-                font-size: 0.8em;
-                cursor: pointer;
-            }
-        }             
-    } 
+    .photo {
+        margin: 0 150px 0 0;
+    }
+    h1 {
+        margin: 0 50px 0 0;
+    }
+    h2 {
+        margin: 0 50px 0 0;
+    }
+    .fa-bars {
+        position: absolute;
+        margin: 20px 40px 0 0;
+        cursor: pointer;
+    }
+        // select {
+        //     width: 32px;
+        //     height: 32px;
+        //     font-size: 1.2em;
+        //     padding: 0;
+        //     position: relative;
+        //     opacity: 0;
+        //     cursor: pointer;
+        //     background-color: black;
+        //     option {
+        //         font-size: 0.8em;
+        //         cursor: pointer;
+        //     }
+        // }             
 }
 
 .photo {
