@@ -1,0 +1,67 @@
+/*Style général*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.container-rwd{
+    height: 100vh;
+    background-color: grey;
+}
+
+/*Fin style général*/
+
+/*RESPONSIVE*/
+/*RWD pour smartphone 320px*/
+@media screen and (min-width: 320px){
+    .container-rwd{
+        width: 320px;
+        margin: 0 auto;
+    }
+
+}
+
+/*RWD pour smartphone 480px*/
+@media screen and (min-width: 480px){
+    .container-rwd{
+        width: 480px;
+        margin: 0 auto;
+    }
+}
+
+/*RWD pour tablettes 481px à 767px*/
+@media screen and (min-width: 768px){
+    .container-rwd{
+        width: 768px;
+        margin: 0 auto;
+    }
+
+}
+/*RWD pour laptop 768px à 979px*/
+@media screen and (min-width: 980px){
+    .container-rwd{
+        width: 980px;
+        margin: 0 auto;
+    }
+}
+/*RWD pour ordinateur 980px à 1200px*/
+@media screen and (min-width: 1200px){
+    .container-rwd{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+/*RWD écrans larges 1600px et plus*/
+@media screen and (min-width: 1600px){
+    .container-rwd{
+        width: 1600px;
+        margin: 0 auto;
+    }
+}

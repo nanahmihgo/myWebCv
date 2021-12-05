@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@font-face {
+	font-family: "pricedown bl";
+	src: url("../font/pricedown/pricedown\ bl.otf");
+}
+
+
+* {
+    font-family: "pricedown bl", "architects daughter", "indie flower", "caveat", "shrikhand", Arial, sans-serif;
+	color: White;
+	-webkit-text-stroke: 2px black;
+    // box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+	background: center fixed no-repeat url("../img/gtaBig.jpg");
+	margin: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    .back {
+        margin: 0 50px 0 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        i {
+            font-size: 1.2em;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        input {
+            width: 90%;
+            height: 30px;
+            font-size: 1em;
+        }
+        button {
+            width: 40%;
+            height: 40px;
+            font-size: 1.2em;
+            border-radius: 20%;
+            border: 2px solid black;
+            background-color: pink;
+        }
+    }    
+}
+
+footer {
+	width: 100vw;
+	height: 10vh;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        align-items: center;
+        margin: 0;
+        width: 80vw;
+        li {
+            transition: transform 200ms ease-in-out;
+            i {
+            font-size: 2rem;
+            }
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+.fa-whatsapp:hover {
+	color: green;
+}
+
+.fa-github:hover {
+	color: pink;
+}
+
+.fa-linkedin:hover {
+	color: #0e76a8;
+}
+
+.fa-discord:hover {
+	color: #7289da;
+}
+
+.fa-twitch:hover {
+	color: #9147fe;
+}

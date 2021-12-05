@@ -12,15 +12,11 @@
     font-family: "pricedown bl", "architects daughter", "indie flower", "caveat", "shrikhand", Arial, sans-serif;
 	color: White;
 	-webkit-text-stroke: 2px black;
+    // box-sizing: border-box;
 }
 
-.son {
-	width: 40vw;
-	height: 2vh;
-}
-
-figure {
-	margin: 0 0 0 2rem;
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,23 +33,36 @@ header {
 	justify-content: flex-start;
 	align-items: center;
 	width: 100vw;
-	height: 30vh;
+	height: 40vh;
 	margin-top: 2vh;
-}
-
-nav {
-	width: 4rem;
-	height: 4rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 2rem 0 0;
+    nav {
+        width: 32px;
+        height: 32px;
+        margin: 20px 20px 0 0;
+        .fa-bars {
+            position: absolute;
+        }
+        select {
+            width: 32px;
+            height: 32px;
+            font-size: 1.2em;
+            padding: 0;
+            position: relative;
+            opacity: 0;
+            cursor: pointer;
+            background-color: black;
+            option {
+                font-size: 0.8em;
+                cursor: pointer;
+            }
+        }             
+    } 
 }
 
 .photo {
 	width: 8rem;
 	height: 8rem;
-	margin: 1rem 0 0 2rem;
+	margin: 0 4rem 0 0;
     .img{
         width: 8rem;
 	    height: 8rem;
@@ -159,6 +168,52 @@ i {
 }
 
 
+// @keyframes loader {
+//     from{
+//         transform: rotate(0deg);
+//     }
+//     to{
+//         transform: rotate(360deg);
+//     }
+// }
+
+// .loader {
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50%;
+//     border-top: 10px $cyan solid;
+//     border-bottom: 10px $pink solid;
+//     border-left: 10px $cyan solid;
+//     border-right: 10px $pink solid;
+//     margin: auto;
+//     top: 0; bottom: 0; left: 0; right: 0;
+//     position: absolute;
+//     animation: loader 500ms ease-in-out infinite;
+// }
+
+// // .page {
+// //     background-color: white;
+// //     animation: page 3000ms ease;
+// //     position: relative;
+// }
+// @keyframes page {
+//     from {
+//         transform: translateY(-9999px);
+//     }
+//     to {
+//         transform: translateY(0);
+//     }
+// }
+
+
+// <figure>
+// <figcaption>Doja</figcaption>
+// <audio class="son" controls src="./sons/dojacat.mp4">
+//     Your browser does not support the
+//     <code>audio</code> element.
+// </audio>
+// </figure>
+
 
 //     .btn {
 //         height: 100%;
@@ -199,3 +254,8 @@ i {
 //         }
 //     }
 // }
+
+@media all and (min-width: 600px) and (max-width: 1024px) {
+
+}
+    
