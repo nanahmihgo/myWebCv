@@ -22,27 +22,27 @@
 
         <section>
             <form class="formulaire">
-                <div class="nomDiv">
-                    <label for="nom" class="nomLabel"></label>
-                    <input type="text" class="nom" id="nom" placeholder="Nom">
+                <div class="inputBox">
+                    <label for="nom" class="nomLabel">Nom :</label>
+                    <input type="text" class="nom" id="nom" placeholder=" Fischer" required>
                 </div>
-                <div class="prenomDiv">
-                    <label for="prenom" class="prenomLabel"></label>
-                    <input type="text" class="prenom" id="prenom" placeholder="Prénom">
+                <div class="inputBox">
+                    <label for="prenom" class="prenomLabel">Prénom :</label>
+                    <input type="text" class="prenom" id="prenom" placeholder=" Vince" required>
                 </div>
-                <div class="telDiv">
-                    <label for="tel" class="emailLabel"></label>
-                    <input type="tel" class="tel" id="tel" placeholder="téléphone">
+                <div class="inputBox">
+                    <label for="tel" class="telLabel">telephone :</label>
+                    <input type="tel" class="tel" id="tel" placeholder=" 33+ 7 00 00 00" required>
                 </div>
-                <div class="emailDiv">
-                    <label for="eMail" class="emailLabel"></label>
-                    <input type="email" class="email" id="eMail" placeholder="e-mail" aria-describedby="emailHelp">
+                <div class="inputBox">
+                    <label for="eMail" class="emailLabel">email :</label>
+                    <input type="email" class="email" id="eMail" placeholder=" vince... .com" aria-describedby="emailHelp" required>
                 </div>
-                <div class="mdpDiv">
-                    <label for="passWord" class="form-label"></label>
-                    <input type="password" class="form-control" id="passWord" placeholder="password">
+                <div class="inputBox">
+                    <label for="passWord" class="form-label">Password :</label>
+                    <input type="password" class="mdp" id="passWord" placeholder=" * * * * * * * *" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" id="bouton" class="submit">Submit</button>
             </form>
         </section>
 
@@ -58,6 +58,7 @@
 				<li><a href="https://www.twitch.tv/nanahmihgo"><i class="fab fa-twitch"></i></a></li>
 			</ul>
 		</footer>
-        <script src="js/app.js"></script>
+        <script src="../js/compressed.js"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>

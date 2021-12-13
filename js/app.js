@@ -1,8 +1,3 @@
-// SON GUN !
-// bouton.onclick=function(){
-//     son1.play()
-//     }
-
 
 // let options = document.querySelectorAll('option')
 
@@ -17,29 +12,62 @@
 //  })
 
 
-
-// document.getElementsByClassName('menu').style.display = 'none';
-// document.getElementsByClassName('block').style.display = 'block';
-
-let menu = document.querySelectorAll('.menu')
-let block = document.getElementsByClassName('block')
-let burger = document.querySelector('i')
+let menu = document.querySelectorAll('.menu');
+let block = document.getElementsByClassName('block');
+let burger = document.querySelector('i');
 
 
   burger.addEventListener('click', () => {
       console.log(menu[0].classList.length);
       if(menu[0].classList.length == 2) {
-      menu[0].classList.remove('test')
-      block[0].classList.remove ('test2')
+      menu[0].classList.remove('test');
+      block[0].classList.remove ('test2');
       } 
       else if (menu[0].classList.length == 1) {
-      menu[0].classList.add('test')
-      block[0].classList.add('test2')
+      menu[0].classList.add('test');
+      block[0].classList.add('test2');
       }
     })
 
 
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
 
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.formulaire')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+
+    // window.addEventListener
+
+
+    //jQuery 
+
+// $(function(){
+
+//     $('h1').css('color', 'pink');
+//     $('h2').css('color', 'green');
+//     $('.nom').css('background-color', 'blue');
+//     $('.prenom').css('background-color', 'pink');
+//     $('.tel').css('background-color', 'salmon');
+//     $('.email').css('background-color', 'orange');
+//     $('.mdp').css('background-color', 'yellow');
+
+// })
 
 // //debut du code
 // document.querySelector('.menu').style.display = 'none';
@@ -70,20 +98,6 @@ let burger = document.querySelector('i')
 
 
 
-// console.log(options)
-// options.addEventListener('click', () => {
-//     switch(options) {
-//     case options[0]: 
-//     window.location.href='./html/inscr.html'
-//     case options[1]: 
-//     window.location.href='./html/inscr.html'
-//     case options[2]: 
-//     window.location.href='./html/inscr.html'
-//     breack
-
-//     default: console.log('va te faire foutre !')
-//     }
-//   })
 
 
 

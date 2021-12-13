@@ -20,7 +20,7 @@ html{
 }
 
 body {
-	background: center fixed no-repeat url("../img/gta2.jpg");
+    background: left fixed no-repeat url("../img/algarve.jpg");
 	margin: auto;
     width: 100vw;
     height: 100vh;
@@ -28,20 +28,52 @@ body {
 }
 
 .menu {
-    width: 40vw;
+    width: 55vw;
     height: 100vh;
     transition: transform 300ms ease-in-out;
-    transform: translateX(-40vw);
+    transform: translateX(-55vw);
     transform-origin: left;
     position: absolute;
+    background: left fixed no-repeat url("../img/algarve.jpg");
+    border-right: 1px black solid;
+    display: flex;
+    justify-content: center;
+    // box-sizing: border-box;
     z-index: 1;
-    background: linear-gradient(60deg,rgb(249, 214, 86), rgb(255, 126, 46));
-    border: 2px rgb(213, 82, 76) solid;
-    box-sizing: border-box;
+    ul {
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin-top: 20%;
+        li {
+            border: 2px solid white;
+            list-style-type: none;
+            transition: transform 300ms ease-in-out;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                transform: scale(1.1);
+                background-color: skyblue;
+            }
+            a {
+                font-size: 1.2em;
+                text-decoration: none;
+                // &:hover {
+                //     color: skyblue;
+                // }
+            }
+        }
+    }
 }
 
 .test {
-    transform: translateX(0)
+    transform: translateX(0);
 }
 
 .block {
@@ -76,21 +108,7 @@ header {
         position: absolute;
         margin: 20px 40px 0 0;
         cursor: pointer;
-    }
-        // select {
-        //     width: 32px;
-        //     height: 32px;
-        //     font-size: 1.2em;
-        //     padding: 0;
-        //     position: relative;
-        //     opacity: 0;
-        //     cursor: pointer;
-        //     background-color: black;
-        //     option {
-        //         font-size: 0.8em;
-        //         cursor: pointer;
-        //     }
-        // }             
+    }    
 }
 
 .photo {
@@ -105,6 +123,7 @@ header {
 }
 
 h1 {
+    position: relative;
 	font-size: 2rem;
 	margin: 0 0 0 2rem;
 }
@@ -143,7 +162,7 @@ section {
                         transition: transform 300ms ease-in-out;
                         &:hover {
                             transform: scale(1.1);
-                            background-color: black;
+                            background-color: skyblue;
                         }   
                     } 
               }
